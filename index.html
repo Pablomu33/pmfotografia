@@ -6,6 +6,7 @@
 	<meta name="Keyword" content="Fotografia, Fotos, Paisajes, viajes, ciudadades, combi">
 	<meta name="Author" content="Pablo Musella">
 	<meta name="Description" content="PM Fotografia es una página personal dedicada a mostrar mi trabajo como fotografo amateur">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,37 +26,46 @@
            </nav>
         </div>
         <div class="logo"> 
-          <img src="/Recursos/logo-horizonta.png" alt="">
+          <img src="Recursos/logo-horizonta.png" alt="">
         </div>
 
         <div class="contenedor head">
             <h1 class="titulo">Pablo Musella</h1>
             <p class="subtitulo">Fotografia</p>
+            <ul class="Redes">
+              <a href="https://instagram.com/p.m_fotografia" target="_blank"> <img src="Recursos/Instagram.png"></a>
+              <a href="https://cafecito.app/pmfotografia" target="_blank"> <img src="Recursos/cafecito.png"></a>
+                     
+          </ul>
         </div>
     </header>
 
     <main>
         <section class="portfolio contenedor" id="portfolio">
             <h2>Mi portfolio</h2>
-            <div class="titulo-paisaje">
+            <div class="titulo-paisaje" data-aos="fade-down">
                 <h3>Paisajes</h3>
                 <div class="imagenes">
                     <img src="Paisaje/foto 1.jpg" alt="" class="img-galeria">
                     <img src="Paisaje/foto 2.jpg" alt="" class="img-galeria">
                     <img src="Paisaje/foto 3.jpg" alt="" class="img-galeria">
+                    <img src="Paisaje/foto 4.jpg" alt="" class="img-galeria">
+                    <img src="Paisaje/foto 5.jpg" alt="" class="img-galeria">
                     
                 </div>
             </div>
-            <div class="titulo-ciudades">
-                <h3>ciudadades</h3>
+            <div class="titulo-ciudades" data-aos="fade-down">
+                <h3>Ciudadades</h3>
                 <div class="imagenes">
                     <img src="Ciudades/foto 1.png" alt="" class="img-galeria">
                     <img src="Ciudades/foto 2.jpg" alt="" class="img-galeria">
                     <img src="Ciudades/foto 3.jpg" alt="" class="img-galeria">
+                    <img src="Ciudades/foto 4.jpg" alt="" class="img-galeria">
+                    <img src="Ciudades/foto 5.jpg" alt="" class="img-galeria">
                     
                 </div>
             </div>
-            <div class="titulo-mate">
+            <div class="titulo-mate" data-aos="fade-down">
                 <h3>Mate por el mundo</h3>
                 <div class="imagenes">
                     <img src="Mate/foto 1.jpg" alt="" class="img-galeria">
@@ -64,10 +74,21 @@
                     
                 </div>
             </div>
+            <div class="titulo-Combi" data-aos="fade-down">
+              <h3>Combi viajera</h3>
+              <div class="imagenes">
+                  <img src="Combi/foto 1.jpg" alt="" class="img-galeria">
+                  <img src="Combi/foto 2.jpg" alt="" class="img-galeria">
+                  <img src="Combi/foto 3.jpg" alt="" class="img-galeria">
+                  <img src="Combi/foto 4.jpg" alt="" class="img-galeria">
+                  <img src="Combi/foto 5.jpg" alt="" class="img-galeria">
+                  
+              </div>
+          </div>
         </section>
         
         <section class="imagen-ligth">
-          <img src="Recursos/bx-x-circle.svg" alt="" class="close">
+          <img src="recursos/bx-x-circle.svg" alt="" class="close">
           <img src="" alt="" class="agregar-imagen">
           
           
@@ -84,7 +105,7 @@
           </div>
 
         </section>
-        <section class="contacto-contenedor" id="contacto">
+        <section class="contacto-contenedor" id="contacto" >
           <div class="form-tit">
             <h2>Contactame</h2>
           </div>
@@ -144,8 +165,8 @@
         <footer>
         
                 <ul class="Redes">
-                    <a href="https://instagram.com/p.m_fotografia" target="_blank"> <img src="/Recursos/Instagram.png"></a>
-                    <a href="https://cafecito.app/pmfotografia" target="_blank"> <img src="/Recursos/cafecito.png"></a>
+                    <a href="https://instagram.com/p.m_fotografia" target="_blank"> <img src="Recursos/Instagram.png"></a>
+                    <a href="https://cafecito.app/pmfotografia" target="_blank"> <img src="Recursos/cafecito.png"></a>
                             
                 </ul>
                 
@@ -155,7 +176,12 @@
     
     </div>
 
-    <script src="js/ligth-box.js"></script>
+    <script src="js/ligth-box.js">
+
+    </script><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     
     
 </body>
